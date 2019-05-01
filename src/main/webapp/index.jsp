@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/close.js"></script>
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/home.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/webapp/css/home.css">
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="

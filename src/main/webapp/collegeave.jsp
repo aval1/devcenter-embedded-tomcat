@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/home.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/rating.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/webapp/css/home.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/webapp/css/rating.css">
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/rating.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
