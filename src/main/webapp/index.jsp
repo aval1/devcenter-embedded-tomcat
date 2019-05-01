@@ -147,7 +147,7 @@ footer {
     </div>
   </div>
 </a>
-<a href="${pageContext.request.contextPath}/Cook" style="background-image:url(http://rutgers.myuvn.com/wp-content/uploads/sites/40/2016/10/RavineBridge.jpg)" class="blurredBG">
+<a href="${pageContext.request.contextPath}/Cook" style="background-image:url(https://rutgers.myuvn.com/wp-content/uploads/sites/40/2016/10/RavineBridge.jpg)" class="blurredBG">
   <div class="parentBG">
     <div class="content" style="display: block !important;">
       Cook Campus
@@ -206,13 +206,13 @@ Rutgers University</a></blockquote></div>
 
 
 <!-- <div id="mapid"></div>-->
-<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+<script src="https://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 </div>
 
 <footer>Copyright &copy; Big Pumba Studios</footer>
 </body>
-<script src="${pageContext.request.contextPath}/jsps/js/slideshow.js"></script>
-<script src="${pageContext.request.contextPath}/jsps/js/mymap.js"></script>
+<script src="${pageContext.request.contextPath}/webapp/js/slideshow.js"></script>
+<script src="${pageContext.request.contextPath}/webapp/js/mymap.js"></script>
 
 <script>
 function myFunction() {
