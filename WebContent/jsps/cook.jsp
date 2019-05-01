@@ -14,13 +14,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Prigmore's Swamp</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/webapp/css/home.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/webapp/css/rating.css">
-<script type="text/javascript" src="${pageContext.request.contextPath}/webapp/js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/webapp/js/rating.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/webapp/js/dropdown.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/webapp/js/imagepreview.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/webapp/js/close.js"></script>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/home.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/rating.css">
+<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/rating.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/dropdown.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/imagepreview.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/close.js"></script>
 </head>
 <style>
 div#right-sidebar{
@@ -44,7 +44,7 @@ div#right-sidebar{
 <div class="topnav">
 	<div class="logo">
 		<a href="${pageContext.request.contextPath}/Home" style="padding-top:0px;">
-			<img src="${pageContext.request.contextPath}/webapp/images/redswamp.png" style="width:71px;height:50px;">
+			<img src="${pageContext.request.contextPath}/jsps/images/redswamp.png" style="width:71px;height:50px;">
 		</a>
 	</div>
 	<a href="${pageContext.request.contextPath}/Alerts">Alerts</a>
@@ -115,17 +115,20 @@ div#right-sidebar{
       <div class="row">
 
         <div class="col-sm-8">
-          <h2 class="mt-4">Busch Campus</h2>
+          <h2 class="mt-4">Cook Campus</h2>
           
-          <p>Busch campus started in 1935 after a 256-acre tract was purchased from Vermeule Farm by the then president <a href="https://www.rutgers.edu/about/history/past-presidents/robert-c-clothier">Robert C. Clothier</a>. 
-At the time it was named the River Road Campus, and it mainly held sporting events, as a <a href="${pageContext.request.contextPath}/webapp/images/busc.jpg" class="preview"> stadium </a> was completed in 1938, and the rest of the land was home to a the golf course,
-and is where many athletic events were held until it was replaced with High Point Solution Stadium now. <sup><a href="https://en.wikipedia.org/wiki/Busch_Campus_of_Rutgers_University#cite_note-2"  target="_blank">[1]</a></sup></p> 
+          <p>Cook Campus was established in 1864, when George H. Cook led the fight to name Rutgers the land-grant recipient in New Jersey. 
+Ninety-eight acres of farmland were purchased from the estate of James Neilson with the money gotten from the land-grant <sup><a href=" " title="Rutgers was given 210,000 acres of what is now Utah under the Morrill Act, which was sold to establish the college and purchase land for the experimental farm." target="_blank">[s]</a></sup>, 
+and the Rutgers Scientific School was created, where experiments were performed to gather research on agriculture and the mechanical arts. 
+Experiments were first run out of in Van Nest Hall on College Ave Campus, when the New Jersey Agricultural Experiment Station was created in 1880. 
+ George H. Cook became the first director of the organization. 
+</p> 
   	<hr style="height:1px;border:none;color:#333;background-color:#333;">
           <!--
           <hr>
           <div>
           <p>Busch campus started in 1935 after a 256-acre tract was purchased from Vermeule Farm by the then president <a href="https://www.rutgers.edu/about/history/past-presidents/robert-c-clothier">Robert C. Clothier</a>. 
-At the time it was named the River Road Campus, and it mainly held sporting events, as a <a href="${pageContext.request.contextPath}/webapp/images/busc.jpg" class="preview"> stadium </a> was completed in 1938, and the rest of the land was home to a the golf course,
+At the time it was named the River Road Campus, and it mainly held sporting events, as a <a href="${pageContext.request.contextPath}/jsps/images/busc.jpg" class="preview"> stadium </a> was completed in 1938, and the rest of the land was home to a the golf course,
 and is where many athletic events were held until it was replaced with High Point Solution Stadium now. <sup><a href="https://en.wikipedia.org/wiki/Busch_Campus_of_Rutgers_University#cite_note-2"  target="_blank">[1]</a></sup></p> 
 
 <div class="content">Before Busch became recongized as the engineering campus, the engineering department was in Murray Hall.
@@ -141,7 +144,7 @@ after a millionare from Edgewater named Charles L. Busch unexpecticly donated $1
     <div id="content">
     <h2>Articles</h2>
            <table>
-          <tr><td><blockquote class="embedly-card"><h4><a href="http://i-am.rutgers.edu/2015/11/hidden-plain-sight-cave/">Hidden in Plain Sight: The CAVE</a></h4><p>The second floor of the Hill Center Annex is an unassuming hallway, left mostly unvisited by the many students who have class in the first floor lecture halls. Yet if you were to venture up there, you would find that its brick walls and industrial doors are home to an abundant amount of resources and a bustling community of students.</p></blockquote>
+          <tr><td><blockquote class="embedly-card" data-card-controls="0"><h4><a href="http://i-am.rutgers.edu/2014/10/rutgers-gardens/">A Stroll Through Rutgers Gardens - I. AM. Rutgers</a></h4><p>Take a break from the hustle and bustle of city life to appreciate a little bit of nature at Rutgers Gardens. If you haven't been to Rutgers Gardens, it's about time you go check it out. You have to take a car to get there, but it's worth the trip.</p></blockquote>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></td>
 </tr>
           </table>
@@ -182,10 +185,19 @@ Rutgers University</a></blockquote></div>  -->
 <div id="Overview" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Overview</h3>
-  <p>Before Busch became recongized as the engineering campus, the engineering department was in Murray Hall.
-This is where the main math and engineering courses were taught (It was also known as the Rutgers Scientific School). After the Soviet Union released Spotnik, the federal government increased its spending on academic science research.
-With this extra money, in 1962, Rutgers was able to relocate the College of Engineering to accross the Raritian River in Piscatiway, and the four-wing engineering building was built, to hold everything engineering related in one spot.  Then in 1971, the campus was renamed from University Heights, to Busch,
-after a millionare from Edgewater named Charles L. Busch unexpecticly donated $10 million to the University for biological research after he died.</p>
+ <p>Due to the success of research done in agriculture, congress approved more funding with the passage of the Hatch Act in 1887. 
+ Those funds were used to construct an "Agricultural Hall" to house the station, and New Jersey Hall was built in 1889. 
+ Eventually the program grew into the College of Agriculture, and in 1912, moved to what is now Cook Campus.
+ A third land-grant act, the Smith-Lever Act was passed in 1914, which established the Cooperative Extension Service at each land-grant institution. 
+ This was help inform people about developments in agriculture. The same year, the Administration Building was built, which is now Martin Hall. In 1917, the College of Agriculture was named the State University of New Jersey. And even in 1924, when Rutgers College changed their name Rutgers University, the College of Agriculture stayed as a distinct unit. 
+ It was not until 1945 that Rutgers University merged with the College of Agriculture to form one university, and in 1956 the entire unit achieved state university status.
+ In 1965, the College of Agriculture changed their name to College of Agriculture and Environmental Sciences, the first land grant institution to include environment in its title. 
+ Around this time, Rutgers developed  "The Federated College System" to seperate Rutgers, Douglass, University College, Livingston, and Cook. 
+ Livingston was just built around this time, and there was this grand idea of creating three seperate colleges on the campus. 
+ Instead, Leland G. Merrill, Jr, the dean of the College of Agriculture and Environmental Sciences, pitched the idea of building a campus in support of the Environmental college, in honor of George H. Cook, and in 1971 Cook College was created. 
+ In 1981, Rutgers moved away from the Federated College System to have a more centralized system.  Cook emerged as a "professional school" (so Cook College still exists)  and includes its own academic majors.
+</p>
+
 <!--
   <form action="${pageContext.request.contextPath}/Busch" method="POST">
 				Enter your name: 
@@ -198,64 +210,46 @@ after a millionare from Edgewater named Charles L. Busch unexpecticly donated $1
 <div id="Fun Facts" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Fun Facts</h3>
-  <ul>
-	<li>Every Thursday, if the skys are clear, you can check out the stars using the telescope at the physics building</li>
-	<li>A Rutgers Bus crashed into McCormick Suites in <a href="http://www.dailytargum.com/article/2001/09/bus-loses-control-crashes">2001</a>, no one was seriously injured</li>
-	<li>The Busch Campus Cove used to be an arcade</li>
-	<li>Back when the drinking age used to be 18 (the good ole days), gerlanda's used to be a bar</li>
-	<li>Actually apperntly all of the student centers used to have pubs</li>
-	<li>The Rutgers Tennis Courts used to have a giant bubble surrounding it, but it got damaged by hurricanes
-	and was never repaired.</li>
-	<li>The Busch Student Center used to have an Art Gallery</li>
-	<li> The old RechargeU on Busch is reportedly turning into an ESports Lounge</li>
-</ul> 
+
 </div>
 
 <div id="Map" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
     <p> <h3>Scupture Map - Click to view</h3>
 
-<img id="myImg" src="${pageContext.request.contextPath}/webapp/images/redswamp.png" alt="Snow" style="display: none;width:100%;max-width:300px">
+<img id="myImg" src="${pageContext.request.contextPath}/jsps/images/redswamp.png" alt="Snow" style="display: none;width:100%;max-width:300px">
 
 <!-- The Modal -->
 <div id="myModal" class="modal"style="display: none;">
   <span class="close">&times;</span>
-  <img class="modal-content" id="img01" src="${pageContext.request.contextPath}/webapp/images/redswamp.png">
+  <img class="modal-content" id="img01" src="${pageContext.request.contextPath}/jsps/images/redswamp.png">
   <div id="caption"></div>
 </div>
 
 <div class="popup" onclick="myFunction()" style="display: none;">Click me to toggle the popup!
-  <span class="popuptext" id="myPopup">Add caption information here, change the style of the popup <img src="${pageContext.request.contextPath}/webapp/images/1.jpg" id="myPopup"></span>
+  <span class="popuptext" id="myPopup">Add caption information here, change the style of the popup <img src="${pageContext.request.contextPath}/jsps/images/1.jpg" id="myPopup"></span>
 </div>
 
 
-<img src="${pageContext.request.contextPath}/webapp/images/Busch/MapBusch.png" alt="Planets" usemap="#planetmap">
+<img src="${pageContext.request.contextPath}/jsps/images/Cook/CookMap.jpg" alt="Planets" usemap="#planetmap">
 
 
 <map name="planetmap">
-  <area id="1" shape="circle" coords="1526,702,15" onclick="myFunction(this.id)" href="#">
-  <area id="2" shape="circle" coords="1149,661,15" onclick="myFunction(this.id)" href="#">
-  <area id="3" shape="circle" coords="956,647,15" onclick="myFunction(this.id)" href="#">
-  <area id="4" shape="circle" coords="1171,453,15" onclick="myFunction(this.id)" href="#">
-  <area id="5" shape="circle" coords="993,399,15" onclick="myFunction(this.id)" href="#">
-  <area id="6" shape="circle" coords="883,431,15" onclick="myFunction(this.id)" href="#">
-  <area id="7" shape="circle" coords="619,607,15" onclick="myFunction(this.id)" href="#">
-  <area id="8" shape="circle" coords="629,539,15" onclick="myFunction(this.id)" href="#">
-  <area id="9" shape="circle" coords="437,463,15" onclick="myFunction(this.id)" href="#">
-  <area id="10" shape="circle" coords="367,521,15" onclick="myFunction(this.id)" href="#">
-  <area id="11" shape="circle" coords="313,491,15" onclick="myFunction(this.id)" href="#">
-  <area id="12" shape="circle" coords="333,463,15" onclick="myFunction(this.id)" href="#">
-  <area id="13" shape="circle" coords="319,421,15" onclick="myFunction(this.id)" href="#">
-  <area id="14" shape="circle" coords="231,371,15" onclick="myFunction(this.id)" href="#">
-  <area id="15" shape="circle" coords="195,543,15" onclick="myFunction(this.id)" href="#">
-  <area id="16" shape="circle" coords="1107,1513,15" onclick="myFunction(this.id)" href="#">
-  <area id="17" shape="circle" coords="799,1655,15" onclick="myFunction(this.id)" href="#">
+<area id="1" shape="circle" coords="502,407,14" onclick="myFunction(this.id)" href="#">
+  <area id="2" shape="circle" coords="581,510,17" onclick="myFunction(this.id)" href="#">
+  <area id="3" shape="circle" coords="640,672,17" onclick="myFunction(this.id)" href="#">
+  <area id="4" shape="circle" coords="796,530,17" onclick="myFunction(this.id)" href="#">
+  <area id="5" shape="circle" coords="756,576,17" onclick="myFunction(this.id)" href="#">
+  <area id="6" shape="circle" coords="946,619,17" onclick="myFunction(this.id)" href="#">
+  <area id="7" shape="circle" coords="734,1534,17" onclick="myFunction(this.id)" href="#">
+  <area id="8" shape="circle" coords="574,1774,17" onclick="myFunction(this.id)" href="#">
+  <area id="9" shape="circle" coords="1311,1821,17" onclick="myFunction(this.id)" href="#">
 </map>
 </div>
 
 <div id="Major Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
- <h3>Busch Building History</h3>
+ <h3>Douglass Building History</h3>
   	<%@ page import="java.sql.ResultSet" %>
 <%@ page import="java.sql.Statement" %>
 <%@ page import="java.sql.Connection" %>
@@ -264,7 +258,7 @@ after a millionare from Edgewater named Charles L. Busch unexpecticly donated $1
 <form method="post">
 
 <table border="2" align="center">
-<tr style="font-weight:bold">
+<tr>
 <td>Year Built</td>
 <td>Building</td>
 <td>Named After</td>
@@ -278,7 +272,7 @@ Class.forName("com.mysql.jdbc.Driver");
 String url="jdbc:mysql://localhost:3307/sakila";
 String username="root";
 String password="root";
-String query="select * from buildings where Location='Busch'";
+String query="select * from buildings where Location='Cook'";
 Connection conn=DriverManager.getConnection(url, username, password);
 Statement stmt=conn.createStatement();
 ResultSet rs=stmt.executeQuery(query);
@@ -432,7 +426,7 @@ e.printStackTrace();
 <div id="Pictures" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Class Gifts</h3>
-  	<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.ResultSet" %>
 <%@ page import="java.sql.Statement" %>
 <%@ page import="java.sql.Connection" %>
 <%@ page import="java.sql.DriverManager" %>
@@ -453,7 +447,7 @@ Class.forName("com.mysql.jdbc.Driver");
 String url="jdbc:mysql://localhost:3307/sakila";
 String username="root";
 String password="root";
-String query="select * from classgifts where extra='Busch'";
+String query="select * from classGifts where extra='Cook'";
 Connection conn=DriverManager.getConnection(url, username, password);
 Statement stmt=conn.createStatement();
 ResultSet rs=stmt.executeQuery(query);
@@ -497,7 +491,7 @@ function myFunction(clicked_id) {
 	 var popup = document.getElementById("myPopup");
 	 popup.classList.toggle("show");
 	 modal.style.display = "block";
- 	modalImg.src = "${pageContext.request.contextPath}/webapp/images/Busch/"+ x +".JPG";
+ 	modalImg.src = "${pageContext.request.contextPath}/jsps/images/Cook/"+ x +".JPG";
  	captionText.innerHTML = this.alt;
 }
 

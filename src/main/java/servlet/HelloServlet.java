@@ -22,7 +22,7 @@ import java.sql.Timestamp;
 /**
  * Servlet implementation class Home
  */
-@WebServlet("/Home")
+@WebServlet("/HelloServlet")
 public class HelloServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
@@ -46,7 +46,7 @@ public class HelloServlet extends HttpServlet {
 		if(request.getSession().getAttribute("username")!=null) {
 			response.sendRedirect(request.getContextPath() + "/portfolio");
 		} else {
-			request.getRequestDispatcher("/webapp/index.jsp").forward(request, response);
+			request.getRequestDispatcher("/jsps/home.jsp").forward(request, response);
 		}
 		//request.getRequestDispatcher("/jsps/js/slideshow.js").forward(request, response);
 
@@ -89,7 +89,7 @@ public class HelloServlet extends HttpServlet {
 			      //Not found return failure and display jsp
 			      else {
 			    	  request.setAttribute("success",false);
-			    	  request.getRequestDispatcher("/webapp/index.jsp").forward(request, response);
+			    	  request.getRequestDispatcher("/jsps/home.jsp").forward(request, response);
 			      }
 			      rs.close();
 			      stmt.close();
@@ -100,7 +100,7 @@ public class HelloServlet extends HttpServlet {
 			 	catch(SQLException se){
 			      se.printStackTrace();
 			      request.setAttribute("success",false);
-			      request.getRequestDispatcher("/webapp/index.jsp").forward(request, response);	
+			      request.getRequestDispatcher("/jsps/home.jsp").forward(request, response);	
 			   }
 			 	catch(Exception e){
 			      e.printStackTrace();

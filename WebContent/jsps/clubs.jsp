@@ -6,14 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Prigmore's Swamp</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/webapp/css/home.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/home.css">
 </head>
 <body>
 
 <div class="topnav">
 	<div class="logo">
 		<a href="${pageContext.request.contextPath}/Home" style="padding-top:0px;">
-			<img src="${pageContext.request.contextPath}/webapp/images/redswamp.png" style="width:71px;height:50px;">
+			<img src="${pageContext.request.contextPath}/jsps/images/redswamp.png" style="width:71px;height:50px;">
 		</a>
 	</div>
 	<a href="#">Alerts</a>

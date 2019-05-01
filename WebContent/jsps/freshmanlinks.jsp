@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/webapp/css/home.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/webapp/css/rating.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/home.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/rating.css">
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/rating.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -61,21 +61,31 @@ div#right-sidebar{
 	<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>
 </div>
 
-<h2>College Avenue</h2>
-<p>College Ave is home to the first Rutgers School. 
-It was orignally known as Queen's College, and most of the orignal buildings still stand in the area by Kirkpatrick Chapel. 
-We recently celebrated our 250th Anniversery, and are one of the oldest institutions in the US. </p>
-  	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+<h2>Useful Swamp information</h2>
+<table style="width:100%">
+<tr><td>
+<ul>
+<li>Course Sniper - If you're trying to get into a class that is full during add/drop period:<a href="http://sniper.rutgers.io/"  target="_blank">[s]</a> </li>
+<!--<li>You cannot go wrong with the Rutgers App, but i mean if you need a color coded map, RU There yet does a good job </li> -->
+<li>Garunteed easiest classes at rutgers with professors:<a href="https://rutgers.transloc.com/info/mobile"  target="_blank">[s]</a> </li>
+<li>Degree Navigator for picking you classes: <a href="https://dn.rutgers.edu/Home.aspx?pageid=default"  target="_blank">[s]</a></li>
+<li>The Standard Class Periods: <a href="https://scheduling.rutgers.edu/scheduling/class-scheduling/standard-course-periods"  target="_blank">[s]</a> </li>
+<li>Download RU Trans Loc App: <a href="https://rutgers.transloc.com/info/mobile"  target="_blank">[s]</a> </li>
+<li>Printing from your Phone is super easy, and saves a ton of time. <a href="https://oit-nb.rutgers.edu/service/printing/how-do-i-print-laptop-or-mobile-device#iOS">[s]</a></li>
+<li>Helpful Link <a href="https://www.reddit.com/r/rutgers/wiki/index">[s]</a></li>
+</ul>
+
+<h3>AVOID:</h3>
+<ul>
+<li>Bus traffic on the first week of class</li>
+<li>Don't even bother during rush hour for about the first month</li>
+<li>Paying more than 10 for any party. But if you do...just don't tell anyone</li>
+<li>The Mongolain grill or pasta line on Busch</li>
+</ul>
+</td>
+
+<td>
 <div id="container">
-    
-    <div id="content">
-    <h2>Articles</h2>
-           <table>
-          <tr><td><blockquote class="embedly-card" data-card-controls="0"><h4><a href="http://i-am.rutgers.edu/2015/11/hidden-in-plain-sight-the-rutgers-geology-museum/">Hidden in Plain Sight: The Rutgers Geology Museum</a></h4><p>You've probably passed it the dozens of times you were anywhere near Queens College and Kirkpatrick Chapel. The Rutgers Geology Museum is one of the oldest collegiate geology museums in the country. I Am Rutgers attended 'Minerals Late Night', a monthly event that aims to teach guests about powerful minerals through demonstrations, arts and crafts, and other educational activities.</p></blockquote>
-<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></td>
-</tr>
-          </table>
-         </div>
     
     <div id="sidebar">
     <ul>
@@ -92,28 +102,73 @@ We recently celebrated our 250th Anniversery, and are one of the oldest institut
     
     
 </div>
+</td></tr>
+</table>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Overview')" id="defaultOpen">Overview</button>
-  <button class="tablinks" onclick="openCity(event, 'Fun Facts')">Fun Facts</button>
-  <button class="tablinks" onclick="openCity(event, 'Map')">Map</button>
-  <button class="tablinks" onclick="openCity(event, 'Major Rankings')">Building History</button>
-  <button class="tablinks" onclick="openCity(event, 'Dorm Rankings')">Articles</button>
-  <button class="tablinks" onclick="openCity(event, 'Pictures')">Class Gifts</button>
-  <!--<button class="tablinks" onclick="openCity(event, 'Greek Life')">Greek Life</button> -->
+ <button class="tablinks" onclick="openCity(event, 'Overview')" id="defaultOpen">Famous Alumni/Celebs</button>
+  <button class="tablinks" onclick="openCity(event, 'Fun Facts')">Food and Drinks</button>
+  <button class="tablinks" onclick="openCity(event, 'Map')">Departments</button>
+  <button class="tablinks" onclick="openCity(event, 'Major Rankings')">Full Class Gifts</button>
+  <button class="tablinks" onclick="openCity(event, 'Dorm Rankings')">Rutgers Presidents</button>
+  <button class="tablinks" onclick="openCity(event, 'Pictures')">r/Rutgers</button>
 </div>
 
 <div id="Overview" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>Overview</h3>
-  <p>The Charter for Rutgers (then called Queens College), was drafted in 1766. There was a dispute on whether the college should reside in New Brunswick or Hackensack,
-  so it was not until 1771 until classes finally begun. They began in a New Brunswick tavern called the "Sign of the Red Lion". Original stones from the tavern are incorporated in a bench at the campus's Voorhees Mall. 
-  The first official graduate from Rutgers was Matthew Leydt in 1774, and he was taught by Frederick Frelinghuysen. 
-  A lot of Old Queen's early history can be found by John Bogart (1778) and letters that he wrote while he attended Rutgers.<sup><a href="http://www2.scc.rutgers.edu/bogart/r2.htm"  target="_blank">[s]</a></sup>
-  The Old Queens Building was built in 1807, and held all of the colleges activities during the time. 
-  The college was renamed in 1825 after Colonel Henry Rutgers, who donated a bond that helped secure the schools finances. He also donated a bell that hangs in the Old Queens cupola, that still rings to this day. 
-  Then the school slowly expanded, and in 1869 the first Collegiate football game was played against Princeton. 
-  Rutgers kept expanding into a University and then was officially named the State University in New Jersey, once again beating Princeton.</p>
+    <h3>Famous People who swam the banks of the Ol' Raritan</h3>
+  
+    	<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.DriverManager" %>
+
+<form method="post">
+
+<table border="2" align="center">
+<tr style="font-weight:bold">
+<td>Class Year</td>
+<td>Alumni Name</td>
+<td>Famous For</td>
+<td>Important Points</td>
+<td>Degree</td>
+</tr>
+<%
+try
+{
+Class.forName("com.mysql.jdbc.Driver");
+String url="jdbc:mysql://localhost:3307/sakila";
+String username="root";
+String password="root";
+String query="select * from alumni";
+Connection conn=DriverManager.getConnection(url, username, password);
+Statement stmt=conn.createStatement();
+ResultSet rs=stmt.executeQuery(query);
+while(rs.next())
+{
+
+%>
+<tr><td><%=rs.getInt("ClassYear") %></td>
+<td><%=rs.getString("AlumniName") %></td>
+<td><%=rs.getString("FamousFor") %></td>
+<td><%=rs.getString("Extra") %></td>
+<td><%=rs.getString("Degree") %></td></tr>
+
+ <%
+}
+%>
+</table>
+<%
+rs.close();
+stmt.close();
+conn.close();
+}
+catch(Exception e)
+{
+e.printStackTrace();
+}
+%>
+</form>
 	</div>
 
 <div id="Fun Facts" class="tabcontent">
@@ -254,55 +309,10 @@ e.printStackTrace();
 </div>
 <div id="Pictures" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>Class Gifts</h3>
-<%@ page import="java.sql.ResultSet" %>
-<%@ page import="java.sql.Statement" %>
-<%@ page import="java.sql.Connection" %>
-<%@ page import="java.sql.DriverManager" %>
+  <h3>r/Reddit</h3>
+  <iframe src="http://redditjs.com/r/Rutgers/hot/month?cssTheme=light&amp;embedId=449444#normal" style="height: 2000px; width: 900px; margin: 0px auto; display: block; top: 0px; left: 0px; border: 2px solid rgb(95, 153, 207); overflow: auto; z-index: 1; position: relative;"></iframe>
+  
 
-<form method="post">
-
-<table border="2" align="center">
-<tr style="font-weight:bold">
-<td>Class Year</td>
-<td>Gift Name</td>
-<td>Summary</td>
-<td>Location</td>
-</tr>
-<%
-try
-{
-Class.forName("com.mysql.jdbc.Driver");
-String url="jdbc:mysql://localhost:3307/sakila";
-String username="root";
-String password="root";
-String query="select * from classGifts where extra='College Ave'";
-Connection conn=DriverManager.getConnection(url, username, password);
-Statement stmt=conn.createStatement();
-ResultSet rs=stmt.executeQuery(query);
-while(rs.next())
-{
-
-%>
-<tr><td><%=rs.getInt("classYear") %></td>
-<td><%=rs.getString("giftName") %></td>
-<td><%=rs.getString("location") %></td>
-<td><%=rs.getString("extra") %></td></tr>
-
- <%
-}
-%>
-</table>
-<%
-rs.close();
-stmt.close();
-conn.close();
-}
-catch(Exception e)
-{
-e.printStackTrace();
-}
-%>
 </div>
 <div id="Greek Life" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
