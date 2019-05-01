@@ -6,8 +6,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
-<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/close.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/webapp/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/wepapp/js/close.js"></script>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/webapp/css/home.css">
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
@@ -18,7 +18,7 @@
    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
    integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
    crossorigin=""></script>
-   <link rel="shortcut icon" href="${pageContext.request.contextPath}/jsps/images/favicon.ico"/>
+   <link rel="shortcut icon" href="${pageContext.request.contextPath}/wepapp/images/favicon.ico"/>
 <style>
 
 #mapid { height: 300px; }
@@ -49,7 +49,7 @@ footer {
 <div class="topnav">
 	<div class="logo">
 		<a href="${pageContext.request.contextPath}/Home" style="padding-top:0px;">
-			<img src="${pageContext.request.contextPath}/jsps/images/redswamp.png" style="width:71px;height:50px;">
+			<img src="${pageContext.request.contextPath}/webapp/images/redswamp.png" style="width:71px;height:50px;">
 		</a>
 	</div>
 	<a href="${pageContext.request.contextPath}/Alerts">Alerts</a>
