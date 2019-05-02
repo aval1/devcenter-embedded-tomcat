@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>My Try</title>
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:300|Source+Code+Pro" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
+<link rel="stylesheet" href="../inc/standard.css">
+<link rel="stylesheet" href="../inc/gridism.css">
+
+<script src="tipuesearch/tipuesearch_set.js"></script>
+<script src="tipuesearch/tipuesearch_content.js"></script>
+<link rel="stylesheet" href="tipuesearch/tipuesearch.css">
+<script src="tipuesearch/tipuesearch.js"></script>
+</head>
+<body>
+    <form>
+<div class="tipue_search_group">
+<input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><button type="submit" class="tipue_search_button"><div class="tipue_search_icon">&#9906;</div></button>
+</div>
+</form>
+
+<div id="tipue_search_content"></div>
+
+
+<script>
+$(document).ready(function() {
+     $('#tipue_search_input').tipuesearch();
+});
+</script>
+</body>
+
+</html>
