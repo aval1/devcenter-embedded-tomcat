@@ -95,7 +95,7 @@ public class Clubs extends HttpServlet {
 			   }catch(SQLException se){
 			      se.printStackTrace();
 			      request.setAttribute("success",false);
-			      request.getRequestDispatcher("/webapp/clubs.jsp").forward(request, response);	
+			      request.getRequestDispatcher("/jsps/clubs.jsp").forward(request, response);	
 			   }catch(Exception e){
 			      e.printStackTrace();
 			   }finally{

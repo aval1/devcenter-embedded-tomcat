@@ -73,7 +73,7 @@ public class ClassGifts extends HttpServlet {
 			    //request.setAttribute("value2",value2);
 			    
 				response.getWriter().append("Served at: ").append(request.getContextPath());
-				request.getRequestDispatcher("/webapp/classgifts.jsp").forward(request, response);
+				request.getRequestDispatcher("/jsps/classgifts.jsp").forward(request, response);
 				}
 
 	/**
@@ -125,7 +125,7 @@ public class ClassGifts extends HttpServlet {
 			   }catch(SQLException se){
 			      se.printStackTrace();
 			      request.setAttribute("success",false);
-			      request.getRequestDispatcher("/webapp/classgifts.jsp").forward(request, response);	
+			      request.getRequestDispatcher("/jsps/classgifts.jsp").forward(request, response);	
 			   }catch(Exception e){
 			      e.printStackTrace();
 			   }finally{
