@@ -41,6 +41,19 @@ public class HelloServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	      Connection c = null;
+	      try {
+	         Class.forName("org.postgresql.Driver");
+	         c = DriverManager
+	            .getConnection("jdbc:postgresql://localhost:5432/dcrlua6cmob1hj",
+	            "azbvktibndwlvy", "6e34cae97945baefaa7c85109bcde7629ee7aadb226f6439ecad95060d272869");
+	      } catch (Exception e) {
+	         e.printStackTrace();
+	         System.err.println(e.getClass().getName()+": "+e.getMessage());
+	         System.exit(0);
+	      }
+	      System.out.println("Opened database successfully");
+	      
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		//If user logged in then redirect to the portfolio page else display jsp
 		if(request.getSession().getAttribute("username")!=null) {
@@ -51,11 +64,24 @@ public class HelloServlet extends HttpServlet {
 		//request.getRequestDispatcher("/jsps/js/slideshow.js").forward(request, response);
 
 	}
+	
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	      Connection c = null;
+	      try {
+	         Class.forName("org.postgresql.Driver");
+	         c = DriverManager
+	            .getConnection("jdbc:postgresql://ec2-54-197-234-117.compute-1.amazonaws.com:5432/dcrlua6cmob1hj",
+	            "azbvktibndwlvy", "6e34cae97945baefaa7c85109bcde7629ee7aadb226f6439ecad95060d272869");
+	      } catch (Exception e) {
+	         e.printStackTrace();
+	         System.err.println(e.getClass().getName()+": "+e.getMessage());
+	         System.exit(0);
+	      }
+	      System.out.println("Opened database successfully");
 		
 		//Get params
 		String button=request.getParameter("button");

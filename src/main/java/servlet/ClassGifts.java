@@ -41,21 +41,21 @@ public class ClassGifts extends HttpServlet {
 				//String value2 = "0";
 
 				try{
-				Class.forName("com.mysql.jdbc.Driver");
-				String url="jdbc:mysql://127.0.0.1:3307/sakila";
-				String username="root";
-				String password="root";
-				String query="select * from classgifts";
+				Class.forName("org.postgresql.Driver");
+				String url="jdbc:postgresql://ec2-54-197-234-117.compute-1.amazonaws.com:5432/dcrlua6cmob1hj";
+				String username="azbvktibndwlvy";
+				String password="6e34cae97945baefaa7c85109bcde7629ee7aadb226f6439ecad95060d272869";
+				String query="select * from prigmoresswamp.buildings";
 				Connection conn=DriverManager.getConnection(url, username, password);
 				Statement stmt=conn.createStatement();
 				ResultSet rs=stmt.executeQuery(query);
 				while(rs.next())
 				{
-				ids = rs.getInt("classYear");
-				item = rs.getString("giftName");
-				rating = rs.getString("info");
-				votes = rs.getString("location");
-				average = rs.getString("extra");
+				ids = rs.getInt("YearBuilt");
+				item = rs.getString("BuildingName");
+				rating = rs.getString("NamedAfter");
+				votes = rs.getString("Location");
+				average = rs.getString("Extra");
 				}
 				rs.close();
 				stmt.close();
