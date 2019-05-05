@@ -208,38 +208,36 @@ We recently celebrated our 250th Anniversery, and are one of the oldest institut
 <td>Location</td>
 </tr>
 <%
-try
-{
-Class.forName("com.mysql.jdbc.Driver");
-String url="jdbc:mysql://localhost:3307/sakila";
-String username="root";
-String password="root";
-String query="select * from sakila.buildings where Location='College Ave' order by YearBuilt";
-Connection conn=DriverManager.getConnection(url, username, password);
-Statement stmt=conn.createStatement();
-ResultSet rs=stmt.executeQuery(query);
-while(rs.next())
-{
+Connection c = null;
+try {
+   Class.forName("org.postgresql.Driver");
+   String query2="select * from prigmoresswamp.buildings where 'Place'= 'College Ave'";
+   c = DriverManager
+      .getConnection("jdbc:postgresql://ec2-54-197-234-117.compute-1.amazonaws.com:5432/dcrlua6cmob1hj",
+      "azbvktibndwlvy", "6e34cae97945baefaa7c85109bcde7629ee7aadb226f6439ecad95060d272869");
+   Statement stmt2=c.createStatement();
+   ResultSet rs2=stmt2.executeQuery(query2);  
+   
+   while(rs2.next())
+   {
 
-%>
-<tr><td><%=rs.getInt("YearBuilt") %></td>
-<td><%=rs.getString("BuildingName") %></td>
-<td><%=rs.getString("NamedAfter") %></td>
-<td><%=rs.getString("Extra") %></td>
-<td><%=rs.getString("Location") %></td></tr>
+   %>
+   <tr><td><%=rs2.getInt("YearBuilt") %></td>
+   <td><%=rs2.getString("BuildingName") %></td>
+   <td><%=rs2.getString("NamedAfter") %></td>
+   <td><%=rs2.getString("Extra") %></td>
+   <td><%=rs2.getString("Place") %></td></tr>
 
- <%
-}
-%>
-</table>
-<%
-rs.close();
-stmt.close();
-conn.close();
-}
-catch(Exception e)
-{
-e.printStackTrace();
+    <%
+   }
+   %>
+   </table>
+   <%
+   rs2.close();
+   stmt2.close();
+   c.close(); 
+} catch (Exception e) {
+   e.printStackTrace();
 }
 %>
 </form>

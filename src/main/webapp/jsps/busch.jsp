@@ -290,7 +290,7 @@ try {
    <td><%=rs2.getString("BuildingName") %></td>
    <td><%=rs2.getString("NamedAfter") %></td>
    <td><%=rs2.getString("Extra") %></td>
-   <td><%=rs2.getString("Location") %></td></tr>
+   <td><%=rs2.getString("Place") %></td></tr>
 
     <%
    }

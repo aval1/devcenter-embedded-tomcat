@@ -60,9 +60,9 @@
 <p>The current list of class gifts is still extremely small, so please submit some</p>
 <table><tr>
 <td>${classYear}</td>
-<td>${item}</td>
-<td>${rating}</td>
-<td>${votes}</td>
+<td>${giftName}</td>
+<td>${info}</td>
+<td>${location}</td>
 <td>${average}</td>
 <td>${value}</td>
 <td>${value2}</td>
