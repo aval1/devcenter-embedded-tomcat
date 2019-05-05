@@ -35,14 +35,8 @@ div#right-sidebar{
 			<img src="${pageContext.request.contextPath}/jsps/images/redswamp.png" style="width:71px;height:50px;">
 		</a>
 	</div>
-	<a href="${pageContext.request.contextPath}/Alerts">Alerts</a>
-	<div class="search-container">
-    <!-- <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form> -->
-  </div>
-  <!--
+	<!-- <a href="${pageContext.request.contextPath}/Alerts">Alerts</a> -->
+	<!--
     <div class="dropdown">
 <button onclick="myFunction()" class="dropbtn">Dropdown</button>
   <div id="myDropdown" class="dropdown-content">
@@ -58,9 +52,10 @@ div#right-sidebar{
 	<a href="${pageContext.request.contextPath}/Clubs">Club Infomation</a>
 	<a href="${pageContext.request.contextPath}/FreshmanLinks">Helpful Links</a>
 	<a href="${pageContext.request.contextPath}/Voting">Voting</a></div>
+	
 </div>
  -->
-	<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>
+	<!-- <a href="${pageContext.request.contextPath}/Contact">Contact Us</a>  -->
 </div>
 
 <h2>College Avenue</h2>
@@ -211,7 +206,7 @@ We recently celebrated our 250th Anniversery, and are one of the oldest institut
 Connection c = null;
 try {
    Class.forName("org.postgresql.Driver");
-   String query2="select * from prigmoresswamp.buildings where 'Place'= 'College Ave'";
+   String query2="select * from prigmoresswamp.buildings where \"Place\"='College Ave'";
    c = DriverManager
       .getConnection("jdbc:postgresql://ec2-54-197-234-117.compute-1.amazonaws.com:5432/dcrlua6cmob1hj",
       "azbvktibndwlvy", "6e34cae97945baefaa7c85109bcde7629ee7aadb226f6439ecad95060d272869");

@@ -33,14 +33,8 @@ div#right-sidebar{
 			<img src="${pageContext.request.contextPath}/jsps/images/redswamp.png" style="width:71px;height:50px;">
 		</a>
 	</div>
-	<a href="${pageContext.request.contextPath}/Alerts">Alerts</a>
-	<div class="search-container">
-    <!-- <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form> -->
-  </div>
-  <!--
+	<!-- <a href="${pageContext.request.contextPath}/Alerts">Alerts</a> -->
+	<!--
     <div class="dropdown">
 <button onclick="myFunction()" class="dropbtn">Dropdown</button>
   <div id="myDropdown" class="dropdown-content">
@@ -56,9 +50,10 @@ div#right-sidebar{
 	<a href="${pageContext.request.contextPath}/Clubs">Club Infomation</a>
 	<a href="${pageContext.request.contextPath}/FreshmanLinks">Helpful Links</a>
 	<a href="${pageContext.request.contextPath}/Voting">Voting</a></div>
+	
 </div>
  -->
-	<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>
+	<!-- <a href="${pageContext.request.contextPath}/Contact">Contact Us</a>  -->
 </div>
 
 <h2>Useful Swamp information</h2>

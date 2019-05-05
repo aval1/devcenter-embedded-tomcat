@@ -29,9 +29,9 @@
 			<img src="${pageContext.request.contextPath}/jsps/images/redswamp.png" style="width:71px;height:50px;">
 		</a>
 	</div>
-	<a href="${pageContext.request.contextPath}/Alerts">Alerts</a>
+	<!--<a href="${pageContext.request.contextPath}/Alerts">Alerts</a> -->
 	<!--<a href="#">Help</a> -->
-	<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>
+	<!--<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>-->
 </div>
 
 <div>
