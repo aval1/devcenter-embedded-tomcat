@@ -448,28 +448,28 @@ try {
 Connection c2 = null;
 try {
    Class.forName("org.postgresql.Driver");
-   String query2="select * from prigmoresswamp.\"ClassGifts\" where \"place\"='Busch'";
-   c = DriverManager
+   String query3="select * from prigmoresswamp.\"ClassGifts\" where \"place\"='Busch'";
+   c2 = DriverManager
       .getConnection("jdbc:postgresql://ec2-54-197-234-117.compute-1.amazonaws.com:5432/dcrlua6cmob1hj",
       "azbvktibndwlvy", "6e34cae97945baefaa7c85109bcde7629ee7aadb226f6439ecad95060d272869");
-   Statement stmt2=c2.createStatement();
-   ResultSet rs2=stmt2.executeQuery(query2);  
+   Statement stmt3=c2.createStatement();
+   ResultSet rs3=stmt3.executeQuery(query3);  
    
-   while(rs2.next())
+   while(rs3.next())
    {
 
    %>
-   <tr><td><%=rs2.getInt("classYear") %></td>
-   <td><%=rs2.getString("giftName") %></td>
-   <td><%=rs2.getString("info") %></td>
-   <td><%=rs2.getString("place") %></td>
+   <tr><td><%=rs3.getInt("classYear") %></td>
+   <td><%=rs3.getString("giftName") %></td>
+   <td><%=rs3.getString("info") %></td>
+   <td><%=rs3.getString("place") %></td>
     <%
    }
    %>
    </table>
    <%
-   rs2.close();
-   stmt2.close();
+   rs3.close();
+   stmt3.close();
    c2.close(); 
 } catch (Exception e) {
    e.printStackTrace();

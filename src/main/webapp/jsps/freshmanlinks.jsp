@@ -227,57 +227,6 @@ try {
 <div id="Major Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Building History</h3>
-  	<%@ page import="java.sql.ResultSet" %>
-<%@ page import="java.sql.Statement" %>
-<%@ page import="java.sql.Connection" %>
-<%@ page import="java.sql.DriverManager" %>
-
-<form method="post">
-
-<table border="2" align="center">
-<tr>
-<td>Year Built</td>
-<td>Building</td>
-<td>Named After</td>
-<td>Important Points</td>
-<td>Location</td>
-</tr>
-<%
-try
-{
-Class.forName("com.mysql.jdbc.Driver");
-String url="jdbc:mysql://localhost:3307/sakila";
-String username="root";
-String password="root";
-String query="select * from sakila.buildings where Location='College Ave' order by YearBuilt";
-Connection conn=DriverManager.getConnection(url, username, password);
-Statement stmt=conn.createStatement();
-ResultSet rs=stmt.executeQuery(query);
-while(rs.next())
-{
-
-%>
-<tr><td><%=rs.getInt("YearBuilt") %></td>
-<td><%=rs.getString("BuildingName") %></td>
-<td><%=rs.getString("NamedAfter") %></td>
-<td><%=rs.getString("Extra") %></td>
-<td><%=rs.getString("Location") %></td></tr>
-
- <%
-}
-%>
-</table>
-<%
-rs.close();
-stmt.close();
-conn.close();
-}
-catch(Exception e)
-{
-e.printStackTrace();
-}
-%>
-</form>
 </div>
 
 <div id="Dorm Rankings" class="tabcontent">
