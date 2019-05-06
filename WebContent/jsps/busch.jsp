@@ -154,8 +154,8 @@ after a millionare from Edgewater named Charles L. Busch unexpecticly donated $1
 	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Livingston">Livingston</a>
 	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Cook">Cook</a>
 	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Douglass">Douglass</a>
-	<li><a class="specialeffects"  href="#">Greek Life</a>
-	<li><a class="specialeffects"  href="#">Voting Totals</a>
+	<li><a class="specialeffects"  href="#">Greek Life (Coming Soon)</a>
+	<li><a class="specialeffects"  href="#">Voting Totals (Coming Soon)</a>
 	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/FreshmanLinks">More Swamp Lore</a></li>
 	</ul>
     </div>
@@ -272,38 +272,36 @@ after a millionare from Edgewater named Charles L. Busch unexpecticly donated $1
 <td>Location</td>
 </tr>
 <%
-try
-{
-Class.forName("com.mysql.jdbc.Driver");
-String url="jdbc:mysql://localhost:3307/sakila";
-String username="root";
-String password="root";
-String query="select * from buildings where Location='Busch'";
-Connection conn=DriverManager.getConnection(url, username, password);
-Statement stmt=conn.createStatement();
-ResultSet rs=stmt.executeQuery(query);
-while(rs.next())
-{
+Connection c = null;
+try {
+   Class.forName("org.postgresql.Driver");
+   String query2="select * from prigmoresswamp.buildings where \"Place\"='Busch'";
+   c = DriverManager
+      .getConnection("jdbc:postgresql://ec2-54-197-234-117.compute-1.amazonaws.com:5432/dcrlua6cmob1hj",
+      "azbvktibndwlvy", "6e34cae97945baefaa7c85109bcde7629ee7aadb226f6439ecad95060d272869");
+   Statement stmt2=c.createStatement();
+   ResultSet rs2=stmt2.executeQuery(query2);  
+   
+   while(rs2.next())
+   {
 
-%>
-<tr><td><%=rs.getInt("YearBuilt") %></td>
-<td><%=rs.getString("BuildingName") %></td>
-<td><%=rs.getString("NamedAfter") %></td>
-<td><%=rs.getString("Extra") %></td>
-<td><%=rs.getString("Location") %></td></tr>
+   %>
+   <tr><td><%=rs2.getInt("YearBuilt") %></td>
+   <td><%=rs2.getString("BuildingName") %></td>
+   <td><%=rs2.getString("NamedAfter") %></td>
+   <td><%=rs2.getString("Extra") %></td>
+   <td><%=rs2.getString("Place") %></td></tr>
 
- <%
-}
-%>
-</table>
-<%
-rs.close();
-stmt.close();
-conn.close();
-}
-catch(Exception e)
-{
-e.printStackTrace();
+    <%
+   }
+   %>
+   </table>
+   <%
+   rs2.close();
+   stmt2.close();
+   c.close(); 
+} catch (Exception e) {
+   e.printStackTrace();
 }
 %>
 </form>
@@ -447,14 +445,14 @@ e.printStackTrace();
 <td>Location</td>
 </tr>
 <%
-Connection c = null;
+Connection c2 = null;
 try {
    Class.forName("org.postgresql.Driver");
    String query2="select * from prigmoresswamp.\"ClassGifts\" where \"place\"='Busch'";
    c = DriverManager
       .getConnection("jdbc:postgresql://ec2-54-197-234-117.compute-1.amazonaws.com:5432/dcrlua6cmob1hj",
       "azbvktibndwlvy", "6e34cae97945baefaa7c85109bcde7629ee7aadb226f6439ecad95060d272869");
-   Statement stmt2=c.createStatement();
+   Statement stmt2=c2.createStatement();
    ResultSet rs2=stmt2.executeQuery(query2);  
    
    while(rs2.next())
@@ -472,7 +470,7 @@ try {
    <%
    rs2.close();
    stmt2.close();
-   c.close(); 
+   c2.close(); 
 } catch (Exception e) {
    e.printStackTrace();
 }

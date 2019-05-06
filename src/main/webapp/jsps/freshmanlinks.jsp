@@ -90,8 +90,8 @@ div#right-sidebar{
 	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Livingston">Livingston</a>
 	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Cook">Cook</a>
 	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Douglass">Douglass</a>
-	<li><a class="specialeffects"  href="#">Greek Life</a>
-	<li><a class="specialeffects"  href="#">Voting Totals</a>
+	<li><a class="specialeffects"  href="#">Greek Life (Coming Soon)</a>
+	<li><a class="specialeffects"  href="#">Voting Totals (Coming Soon)</a>
 	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/FreshmanLinks">More Swamp Lore</a></li>
 	</ul>
     </div>
