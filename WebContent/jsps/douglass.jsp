@@ -198,7 +198,15 @@ The school opened with 54 women and 16 facilty......in 1955 the school was renam
 <div id="Fun Facts" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Fun Facts</h3>
- 
+ <ul>
+ <li>There is an abandoned bowling alley under Loree Classroom Building <!--<sup><a href=""  target="_blank">[s]</a></sup> --></li>
+ <li>There are abadoned dorms on Douglass called the Corwin Houses. They were nicknamed the horseshoes <sup><a href="http://www.hiddennj.com/2013/05/a-home-away-from-home-house-dorms-at.html"  target="_blank">[s]</a></sup></li>
+ <li>In 1933, Mabel Smith Douglass, whom Douglass College was named for, retired to her cottage in Lake Placid. 
+ She took her boat out for her daily row on the lake but did not return. 
+ Her empty boat was found later in the afternoon, but the mystery ensued, as searchers turned up no trace of her. 
+ Thirty years later, her body was found at the bottom of the lake, with another unsolved mystery still remaining - if the cause was suicide or accidental.<sup><a href="https://www.rutgersrarities.com/RRitems.html"  target="_blank">[s]</a></sup></li>
+ <li>According to a long-standing legend, if a male student from Cook College and a Douglass College woman held hands and walked around the pond three times, they would be married and live happily ever after <sup><a href="https://news.rutgers.edu/special/rutgers%E2%80%99-passion-puddle-among-americas-most-romantic-college-spots/20150211#.XM-T4OhKjIU"  target="_blank">[s]</a></sup></li>
+ </ul>
  
 </div>
 
@@ -255,38 +263,36 @@ The school opened with 54 women and 16 facilty......in 1955 the school was renam
 <td>Location</td>
 </tr>
 <%
-try
-{
-Class.forName("com.mysql.jdbc.Driver");
-String url="jdbc:mysql://localhost:3307/sakila";
-String username="root";
-String password="root";
-String query="select * from buildings where Location='Douglass'";
-Connection conn=DriverManager.getConnection(url, username, password);
-Statement stmt=conn.createStatement();
-ResultSet rs=stmt.executeQuery(query);
-while(rs.next())
-{
+Connection c = null;
+try {
+   Class.forName("org.postgresql.Driver");
+   String query2="select * from prigmoresswamp.buildings where \"Place\"='Douglass'";
+   c = DriverManager
+      .getConnection("jdbc:postgresql://ec2-54-197-234-117.compute-1.amazonaws.com:5432/dcrlua6cmob1hj",
+      "azbvktibndwlvy", "6e34cae97945baefaa7c85109bcde7629ee7aadb226f6439ecad95060d272869");
+   Statement stmt2=c.createStatement();
+   ResultSet rs2=stmt2.executeQuery(query2);  
+   
+   while(rs2.next())
+   {
 
-%>
-<tr><td><%=rs.getInt("YearBuilt") %></td>
-<td><%=rs.getString("BuildingName") %></td>
-<td><%=rs.getString("NamedAfter") %></td>
-<td><%=rs.getString("Extra") %></td>
-<td><%=rs.getString("Location") %></td></tr>
+   %>
+   <tr><td><%=rs2.getInt("YearBuilt") %></td>
+   <td><%=rs2.getString("BuildingName") %></td>
+   <td><%=rs2.getString("NamedAfter") %></td>
+   <td><%=rs2.getString("Extra") %></td>
+   <td><%=rs2.getString("Place") %></td></tr>
 
- <%
-}
-%>
-</table>
-<%
-rs.close();
-stmt.close();
-conn.close();
-}
-catch(Exception e)
-{
-e.printStackTrace();
+    <%
+   }
+   %>
+   </table>
+   <%
+   rs2.close();
+   stmt2.close();
+   c.close(); 
+} catch (Exception e) {
+   e.printStackTrace();
 }
 %>
 </form>

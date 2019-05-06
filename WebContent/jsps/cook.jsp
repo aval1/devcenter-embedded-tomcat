@@ -210,7 +210,11 @@ Rutgers University</a></blockquote></div>  -->
 <div id="Fun Facts" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Fun Facts</h3>
-
+<ul>
+	<li>Jameson Hall has an swimming pool in the basement. It was abadoned after a girl drowned in it</li>
+	<li>Rutgers has a tomato named after itself<sup><a href="https://en.wikipedia.org/wiki/Rutgers_tomato#History"  target="_blank">[s]</a></sup></li>
+	
+</ul>
 </div>
 
 <div id="Map" class="tabcontent">
@@ -266,38 +270,36 @@ Rutgers University</a></blockquote></div>  -->
 <td>Location</td>
 </tr>
 <%
-try
-{
-Class.forName("com.mysql.jdbc.Driver");
-String url="jdbc:mysql://localhost:3307/sakila";
-String username="root";
-String password="root";
-String query="select * from buildings where Location='Cook'";
-Connection conn=DriverManager.getConnection(url, username, password);
-Statement stmt=conn.createStatement();
-ResultSet rs=stmt.executeQuery(query);
-while(rs.next())
-{
+Connection c = null;
+try {
+   Class.forName("org.postgresql.Driver");
+   String query2="select * from prigmoresswamp.buildings where \"Place\"='Cook'";
+   c = DriverManager
+      .getConnection("jdbc:postgresql://ec2-54-197-234-117.compute-1.amazonaws.com:5432/dcrlua6cmob1hj",
+      "azbvktibndwlvy", "6e34cae97945baefaa7c85109bcde7629ee7aadb226f6439ecad95060d272869");
+   Statement stmt2=c.createStatement();
+   ResultSet rs2=stmt2.executeQuery(query2);  
+   
+   while(rs2.next())
+   {
 
-%>
-<tr><td><%=rs.getInt("YearBuilt") %></td>
-<td><%=rs.getString("BuildingName") %></td>
-<td><%=rs.getString("NamedAfter") %></td>
-<td><%=rs.getString("Extra") %></td>
-<td><%=rs.getString("Location") %></td></tr>
+   %>
+   <tr><td><%=rs2.getInt("YearBuilt") %></td>
+   <td><%=rs2.getString("BuildingName") %></td>
+   <td><%=rs2.getString("NamedAfter") %></td>
+   <td><%=rs2.getString("Extra") %></td>
+   <td><%=rs2.getString("Place") %></td></tr>
 
- <%
-}
-%>
-</table>
-<%
-rs.close();
-stmt.close();
-conn.close();
-}
-catch(Exception e)
-{
-e.printStackTrace();
+    <%
+   }
+   %>
+   </table>
+   <%
+   rs2.close();
+   stmt2.close();
+   c.close(); 
+} catch (Exception e) {
+   e.printStackTrace();
 }
 %>
 </form>

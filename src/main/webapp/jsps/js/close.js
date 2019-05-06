@@ -15,16 +15,16 @@ $(document).ready(function () {
 	    	quote:"Floyd Mayweather used to live in New Brunswick"
 	    },
 	    {
-	    	quote:"The will to win, the desire to succeed, the ufsdsdfsdfs rge to reach your full potential... these are the keys that will unlock the door to personal excellence."
+	    	quote:"In 1874, a whale was beached on the banks of the old Raritan. It's skeleton was later hung from the ceiling of the geological hall."
 	    },
 	    {
-	    	quote:"The will to ffdsfsdf win, the desire to succeed, the urge to reach your full potential... these are the keys that will unlock the door to personal excellence."
+	    	quote:"Sojourner Truth was owned by Jacob Hardenburgh's family when she was young"
 	    },
 	    {
-	    	quote:"The will to win, the desire to svsdfsfsucceed, the urge to reach your full potential... these are the keys that will unlock the door to personal excellence."
+	    	quote:"William Vanderbilt was born in New Brunswick"
 	    },
 	    {
-	    	quote:"The will to win, the desire to succeed, the urge to reach fsfsfyour full potential... these are the keys that will unlock the door to personal excellence."
+	    	quote:"New Brunswick is known as the Health Care City, because of the different hospitials and the J&J headquarters"
 	    },
 	    {
 	    	quote:"Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time."

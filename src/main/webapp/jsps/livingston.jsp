@@ -29,9 +29,9 @@
 			<img src="${pageContext.request.contextPath}/jsps/images/redswamp.png" style="width:71px;height:50px;">
 		</a>
 	</div>
-	<a href="${pageContext.request.contextPath}/Alerts">Alerts</a>
+	<!--<a href="${pageContext.request.contextPath}/Alerts">Alerts</a> -->
 	<!--<a href="#">Help</a> -->
-	<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>
+	<!--<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>-->
 </div>
 
 <div>
@@ -138,22 +138,12 @@ Plus it now has some of the best apartments, classrooms, and food places at Rutg
 <img src="${pageContext.request.contextPath}/jsps/images/LivingstonMap.jpg" alt="Planets" usemap="#planetmap">
 
 <map name="planetmap">
-  <area id="1" shape="circle" coords="1145,525,14" onclick="myFunction(this.id)" href="#">
-  <area id="2" shape="circle" coords="857,495,14" onclick="myFunction(this.id)" href="#">
-  <area id="3" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
-  <area id="4" shape="circle" coords="879,339,14" onclick="myFunction(this.id)" href="#">
-  <area id="5" shape="circle" coords="661,325,14" onclick="myFunction(this.id)" href="#">
-  <area id="6" shape="circle" coords="462,451,14" onclick="myFunction(this.id)" href="#">
-  <area id="7" shape="circle" coords="473,405,14" onclick="myFunction(this.id)" href="#">
-  <area id="8" shape="circle" coords="330,350,14" onclick="myFunction(this.id)" href="#">
-  <area id="9" shape="circle" coords="275,395,14" onclick="myFunction(this.id)" href="#">
-  <area id="10" shape="circle" coords="235,369,14" onclick="myFunction(this.id)" href="#">
-  <area id="11" shape="circle" coords="249,345,14" onclick="myFunction(this.id)" href="#">
-  <area id="12" shape="circle" coords="237,315,14" onclick="myFunction(this.id)" href="#">
-  <area id="13" shape="circle" coords="174,277,14" onclick="myFunction(this.id)" href="#">
-  <area id="14" shape="circle" coords="144,406,14" onclick="myFunction(this.id)" href="#">
-  <area id="15" shape="circle" coords="828,1132,14" onclick="myFunction(this.id)" href="#">
-  <area id="16" shape="circle" coords="548,1241,14" onclick="myFunction(this.id)" href="#">
+  <area id="1" shape="circle" coords="220,310,14" onclick="myFunction(this.id)" href="#">
+  <area id="2" shape="circle" coords="229,330,14" onclick="myFunction(this.id)" href="#">
+  <area id="3" shape="circle" coords="316,364,14" onclick="myFunction(this.id)" href="#">
+  <area id="4" shape="circle" coords="505,270,14" onclick="myFunction(this.id)" href="#">
+  <area id="5" shape="circle" coords="567,190,14" onclick="myFunction(this.id)" href="#">
+  <area id="6" shape="circle" coords="383,888,14" onclick="myFunction(this.id)" href="#">
 </map>
 </div>
 <div id="Major Rankings" class="tabcontent">
@@ -175,38 +165,36 @@ Plus it now has some of the best apartments, classrooms, and food places at Rutg
 <td>Location</td>
 </tr>
 <%
-try
-{
-Class.forName("com.mysql.jdbc.Driver");
-String url="jdbc:mysql://localhost:3307/sakila";
-String username="root";
-String password="root";
-String query="select * from buildings where Location='Livingston'";
-Connection conn=DriverManager.getConnection(url, username, password);
-Statement stmt=conn.createStatement();
-ResultSet rs=stmt.executeQuery(query);
-while(rs.next())
-{
+Connection c = null;
+try {
+   Class.forName("org.postgresql.Driver");
+   String query2="select * from prigmoresswamp.buildings where \"Place\"='Livingston'";
+   c = DriverManager
+      .getConnection("jdbc:postgresql://ec2-54-197-234-117.compute-1.amazonaws.com:5432/dcrlua6cmob1hj",
+      "azbvktibndwlvy", "6e34cae97945baefaa7c85109bcde7629ee7aadb226f6439ecad95060d272869");
+   Statement stmt2=c.createStatement();
+   ResultSet rs2=stmt2.executeQuery(query2);  
+   
+   while(rs2.next())
+   {
 
-%>
-<tr><td><%=rs.getInt("YearBuilt") %></td>
-<td><%=rs.getString("BuildingName") %></td>
-<td><%=rs.getString("NamedAfter") %></td>
-<td><%=rs.getString("Extra") %></td>
-<td><%=rs.getString("Location") %></td></tr>
+   %>
+   <tr><td><%=rs2.getInt("YearBuilt") %></td>
+   <td><%=rs2.getString("BuildingName") %></td>
+   <td><%=rs2.getString("NamedAfter") %></td>
+   <td><%=rs2.getString("Extra") %></td>
+   <td><%=rs2.getString("Place") %></td></tr>
 
- <%
-}
-%>
-</table>
-<%
-rs.close();
-stmt.close();
-conn.close();
-}
-catch(Exception e)
-{
-e.printStackTrace();
+    <%
+   }
+   %>
+   </table>
+   <%
+   rs2.close();
+   stmt2.close();
+   c.close(); 
+} catch (Exception e) {
+   e.printStackTrace();
 }
 %>
 </form>

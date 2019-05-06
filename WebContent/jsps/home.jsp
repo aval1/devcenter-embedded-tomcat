@@ -74,8 +74,8 @@ padding-right:50px;
 
 <h2>Prigmore's Swamp - The Unoffical Rutgers Wiki</h2>
 <table><tr><td width="80%">
-<p>Prigmore's Swamp was orginally a dense cedar forest settled in 1681 by English pioneers. One of which was named John Pirgmore. 
-The settlers used the nearby river to foster trade with other major cities in New Jersey.  
+<p>Prigmore's Swamp was orginally a dense cedar forest settled in 1681 by English pioneers. <sup><a href="https://twitter.com/CityofNewBruns/status/1001886195192918016"  target="_blank">[s]</a></sup>
+One of which was named John Pirgmore. The settlers used the nearby river to foster trade with other major cities in New Jersey.  
 The area expanded into a ferry town, and in 1724 it was renamed New Brunswick, honor of King George I, the Duke of Brunswick.  
 During the 1730s there was a large Dutch immigration from Albany, New York, settling on what would later be named "Albany Street".
  Along Albany Street were famous inns, where American leaders like George Washington and Ben Franklin stayed during the Revolutionary war.
@@ -171,6 +171,7 @@ During the 1730s there was a large Dutch immigration from Albany, New York, sett
     </div>
   </div>
 </a>
+<!--
 <a href="#" style="background-image:url(https://www.iecabroad.com/wp-content/uploads/2016/05/CAM_Housing-100-1.jpg)" class="blurredBG">
   <div class="parentBG">
     <div class="content">
@@ -197,7 +198,7 @@ During the 1730s there was a large Dutch immigration from Albany, New York, sett
     <div class="bG">
     </div>
   </div>
-</a>
+</a>-->
 
 <!--<div class="div1">
 

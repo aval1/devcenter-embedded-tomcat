@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -33,14 +35,8 @@ div#right-sidebar{
 			<img src="${pageContext.request.contextPath}/jsps/images/redswamp.png" style="width:71px;height:50px;">
 		</a>
 	</div>
-	<a href="${pageContext.request.contextPath}/Alerts">Alerts</a>
-	<div class="search-container">
-    <!-- <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form> -->
-  </div>
-  <!--
+	<!-- <a href="${pageContext.request.contextPath}/Alerts">Alerts</a> -->
+	<!--
     <div class="dropdown">
 <button onclick="myFunction()" class="dropbtn">Dropdown</button>
   <div id="myDropdown" class="dropdown-content">
@@ -56,9 +52,10 @@ div#right-sidebar{
 	<a href="${pageContext.request.contextPath}/Clubs">Club Infomation</a>
 	<a href="${pageContext.request.contextPath}/FreshmanLinks">Helpful Links</a>
 	<a href="${pageContext.request.contextPath}/Voting">Voting</a></div>
+	
 </div>
  -->
-	<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>
+	<!-- <a href="${pageContext.request.contextPath}/Contact">Contact Us</a>  -->
 </div>
 
 <h2>College Avenue</h2>
@@ -120,28 +117,25 @@ We recently celebrated our 250th Anniversery, and are one of the oldest institut
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
     <h3>Fun Facts</h3>
     <ul>
-    <li>New Brunswick was orignally called Prigmore's Swamp... hence the name....<sup><a href="https://twitter.com/CityofNewBruns/status/1001886195192918016"  target="_blank">[s]</a></sup></li>
-	<li>Rutgers has a tomato named after itself<sup><a href="https://en.wikipedia.org/wiki/Rutgers_tomato#History"  target="_blank">[s]</a></sup></li>
+	<li>Mine Street used to be an Actual Copper <a href="https://assets.rbl.ms/14645584/980x.png">Mine</a> - Link to picture </li>
+	<li>There is a Rutgers supersition that if you walk underneath the Graduation Arch more than twice, you will not graduate <sup><a href="http://i-am.rutgers.edu/2013/09/old-queens-gate/"  target="_blank">[s]</a></sup></li>
+	<li>Another supersition is that William the Silent in Vorhees Mall only wistles when a virgin girl in thier senior year walks past it. Legend has it... that he has never wistled <sup><a href="http://i-am.rutgers.edu/2013/10/scarlet-lore-willy-the-silent/"  target="_blank">[s]</a></sup></li>
+	<li>There is a graffiti Path Between Busch and College Ave behind the park where the River Dorms are</li>
+	<li>Scudder Hall is an old building where Rutgers Hillel stands now</li>
+	<li>Alexander Hamilton Trained his artillery in New Brunswick while waiting for George Washington at the battle of Trenton. </li>
+	<li>199 College Ave is reportedly haunted </li>
+	<li>The Sign of the Red Lion was reportedly located where Johnson  Johnson's World Headquaters is now. <sup><a href="https://lists.h-net.org/cgi-bin/logbrowse.pl?trx=vx&list=h-new-jersey&month=0711&week=c&msg=RUVeLkZsaZXOUxL4zleZLA&user=&pw=" target="_blank">[s]</a></sup></li>
+	<li>Johnson and Johnson's World Headquaters is in New Brunswick lol</li>
+	<li>The Daily Targum was founded in 1869, it is the second-oldest collegiate newspaper in the United States</li>
+	<li>There is a Bell tone that rings from the Honors College every hour. At 12 and 6PM, it rings the Rutgers Alma Mater <sup><a href="https://www.youtube.com/watch?v=iTyBF6Iud3w"  target="_blank">[s]</a></sup></li>
 	<li>The cure of TB was found at Rutgers 1943, by Albert Schatz, under the supervision of Nobel Prize winner, Selman Waksman <sup><a href="https://en.wikipedia.org/wiki/Streptomycin#History"  target="_blank">[s]</a></sup></li>
 	<li>Selman Waksman discovered the ability to discover antibiotics <sup><a href="https://news.rutgers.edu/feature/selman-waksman-rutgers-alumnus-researcher-and-nobel-prize-winner-developed-system-discover/20160417#.W4Lu_uhKjIU"  target="_blank">[s]</a></sup></li>
-	<li>You can print to any Rutgers printer from your laptop by downloading an RU Wireless print <a href="https://www.cs.rutgers.edu/resources/printing-on-windows"> driver</a> </li>
 	<li>On print release stations, you can select multiple jobs for printing at the same time. 
 	Select the first job and drag down at an angle; the rest of your jobs will also be selected. It's magical. <sup><a href="https://www.reddit.com/r/rutgers/comments/3k8ww0/little_rutgers_things_i_wish_i_knew_earlier/"  target="_blank">[s]</a></sup></li>
 	<li>Rutgers offers personal training and massages for very  cheap-- much cheaper than you'll find once you leave. <sup><a href="https://www.reddit.com/r/rutgers/comments/3k8ww0/little_rutgers_things_i_wish_i_knew_earlier/"  target="_blank">[s]</a></sup></li>
 	<li>There's a bus that goes to NYC (Port Authority Bus Terminal) and tickets are around $17 round trip. It's cheaper than the $26 round trip train fare. 
 	You have to buy them from the SABO, in the bottom floor of the SAC.  <sup><a href="https://www.reddit.com/r/rutgers/comments/3k8ww0/little_rutgers_things_i_wish_i_knew_earlier/"  target="_blank">[s]</a></sup></li>
 	<li>Theres an office at records hall that's unlocked</li>
-	<li>Mine Street - used to be an Actual Copper <a href="https://assets.rbl.ms/14645584/980x.png">Mine</a> - Link to picture </li>
-	<li>If you walk underneath the Graduation Arch more than twice, you will not graduate <sup><a href="http://i-am.rutgers.edu/2013/09/old-queens-gate/"  target="_blank">[s]</a></sup></li>
-	<li>William the Silent in Vorhees Mall only wistles when a virgin walks past it. Legend has it... that he has never wistled <sup><a href="http://i-am.rutgers.edu/2013/10/scarlet-lore-willy-the-silent/"  target="_blank">[s]</a></sup></li>
-	<li>There is a graffiti Path Between Busch and College Ave behind the park where the River Dorms are</li>
-	<li>Scudder Hall is an old building where Rutgers Hillel stands now</li>
-	<li>Alexander Hamilton Trained his artillery in New Brunswick while waiting for George Washington at the battle of Trenton. </li>
-	<li>199 College Ave is reportedly haunted </li>
-	<li> The Sign of the Red Lion was reportedly located where Johnson  Johnson's World Headquaters is now. <sup><a href="https://lists.h-net.org/cgi-bin/logbrowse.pl?trx=vx&list=h-new-jersey&month=0711&week=c&msg=RUVeLkZsaZXOUxL4zleZLA&user=&pw=" target="_blank">[s]</a></sup></li>
-	<li>Johnson and Johnson's World Headquaters is in New Brunswick lol</li>
-	<li>The Daily Targum was founded in 1869, it is the second-oldest collegiate newspaper in the United States</li>
-	<li>There is a Bell tone that rings from the Honors College every hour. At 12 and 6PM, it rings the Rutgers Alma Mater <sup><a href="https://www.youtube.com/watch?v=iTyBF6Iud3w"  target="_blank">[s]</a></sup></li>
 	</ul> 
 </div>
 
@@ -206,38 +200,36 @@ We recently celebrated our 250th Anniversery, and are one of the oldest institut
 <td>Location</td>
 </tr>
 <%
-try
-{
-Class.forName("com.mysql.jdbc.Driver");
-String url="jdbc:mysql://localhost:3307/sakila";
-String username="root";
-String password="root";
-String query="select * from sakila.buildings where Location='College Ave' order by YearBuilt";
-Connection conn=DriverManager.getConnection(url, username, password);
-Statement stmt=conn.createStatement();
-ResultSet rs=stmt.executeQuery(query);
-while(rs.next())
-{
+Connection c = null;
+try {
+   Class.forName("org.postgresql.Driver");
+   String query2="select * from prigmoresswamp.buildings where \"Place\"='College Ave'";
+   c = DriverManager
+      .getConnection("jdbc:postgresql://ec2-54-197-234-117.compute-1.amazonaws.com:5432/dcrlua6cmob1hj",
+      "azbvktibndwlvy", "6e34cae97945baefaa7c85109bcde7629ee7aadb226f6439ecad95060d272869");
+   Statement stmt2=c.createStatement();
+   ResultSet rs2=stmt2.executeQuery(query2);  
+   
+   while(rs2.next())
+   {
 
-%>
-<tr><td><%=rs.getInt("YearBuilt") %></td>
-<td><%=rs.getString("BuildingName") %></td>
-<td><%=rs.getString("NamedAfter") %></td>
-<td><%=rs.getString("Extra") %></td>
-<td><%=rs.getString("Location") %></td></tr>
+   %>
+   <tr><td><%=rs2.getInt("YearBuilt") %></td>
+   <td><%=rs2.getString("BuildingName") %></td>
+   <td><%=rs2.getString("NamedAfter") %></td>
+   <td><%=rs2.getString("Extra") %></td>
+   <td><%=rs2.getString("Place") %></td></tr>
 
- <%
-}
-%>
-</table>
-<%
-rs.close();
-stmt.close();
-conn.close();
-}
-catch(Exception e)
-{
-e.printStackTrace();
+    <%
+   }
+   %>
+   </table>
+   <%
+   rs2.close();
+   stmt2.close();
+   c.close(); 
+} catch (Exception e) {
+   e.printStackTrace();
 }
 %>
 </form>
