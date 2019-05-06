@@ -53,7 +53,7 @@ padding-right:50px;
 	</div>
 	<!--<a href="${pageContext.request.contextPath}/Alerts">Alerts</a>  -->
     <div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+<button onclick="myFunction()" class="dropbtn">Pages</button>
   <div id="myDropdown" class="dropdown-content">
     <a href="${pageContext.request.contextPath}/CollegeAve">College Ave</a>
     <a href="${pageContext.request.contextPath}/Busch">Busch</a>
@@ -61,11 +61,12 @@ padding-right:50px;
 	<a href="${pageContext.request.contextPath}/Cook">Cook</a>
 	<a href="${pageContext.request.contextPath}/Douglass">Douglass</a>
 	<a href="${pageContext.request.contextPath}/GreekLife">Greek Life</a>
-	<a href="${pageContext.request.contextPath}/ClassGifts">Class Gifts</a>
+	<!--<a href="${pageContext.request.contextPath}/ClassGifts">Class Gifts</a>
 	<a href="${pageContext.request.contextPath}/Timeline">Timeline</a>
 	<a href="${pageContext.request.contextPath}/Parking">Parking Hacks</a>
 	<a href="${pageContext.request.contextPath}/Clubs">Club Infomation</a>
-	<a href="${pageContext.request.contextPath}/FreshmanLinks">Helpful Links</a>
+	 -->
+	<a href="${pageContext.request.contextPath}/FreshmanLinks">Swamp Lore</a>
 	<a href="${pageContext.request.contextPath}/Voting">Voting</a></div>
 	
 </div>
@@ -75,7 +76,7 @@ padding-right:50px;
 <h2>Prigmore's Swamp - The Unoffical Rutgers Wiki</h2>
 <table><tr><td width="80%">
 <p>Prigmore's Swamp was orginally a dense cedar forest settled in 1681 by English pioneers. <sup><a href="https://twitter.com/CityofNewBruns/status/1001886195192918016"  target="_blank">[s]</a></sup>
-One of which was named John Pirgmore. The settlers used the nearby river to foster trade with other major cities in New Jersey.  
+One of which was named John Prigmore. The settlers used the nearby river to foster trade with other major cities in New Jersey.  
 The area expanded into a ferry town, and in 1724 it was renamed New Brunswick, honor of King George I, the Duke of Brunswick.  
 During the 1730s there was a large Dutch immigration from Albany, New York, settling on what would later be named "Albany Street".
  Along Albany Street were famous inns, where American leaders like George Washington and Ben Franklin stayed during the Revolutionary war.

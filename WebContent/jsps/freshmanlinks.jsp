@@ -189,28 +189,28 @@ try {
 Connection c2 = null;
 try {
    Class.forName("org.postgresql.Driver");
-   String query2="select * from prigmoresswamp.food";
+   String query3="select * from prigmoresswamp.food";
    c2 = DriverManager
       .getConnection("jdbc:postgresql://ec2-54-197-234-117.compute-1.amazonaws.com:5432/dcrlua6cmob1hj",
       "azbvktibndwlvy", "6e34cae97945baefaa7c85109bcde7629ee7aadb226f6439ecad95060d272869");
-   Statement stmt2=c2.createStatement();
-   ResultSet rs2=stmt2.executeQuery(query2);  
+   Statement stmt3=c2.createStatement();
+   ResultSet rs3=stmt3.executeQuery(query3);  
    
-   while(rs2.next())
+   while(rs3.next())
    {
 
    %>
-   <tr><td><%=rs2.getString("spot") %></td>
-   <td><%=rs2.getString("summary") %></td>
-   <td><%=rs2.getString("snownfor") %></td></tr>
+   <tr><td><%=rs3.getString("spot") %></td>
+   <td><%=rs3.getString("summary") %></td>
+   <td><%=rs3.getString("snownfor") %></td></tr>
 
     <%
    }
    %>
    </table>
    <%
-   rs2.close();
-   stmt2.close();
+   rs3.close();
+   stmt3.close();
    c2.close(); 
 } catch (Exception e) {
    e.printStackTrace();

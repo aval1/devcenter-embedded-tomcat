@@ -203,7 +203,7 @@ after a millionare from Edgewater named Charles L. Busch unexpecticly donated $1
 	<li>A Rutgers Bus crashed into McCormick Suites in <a href="http://www.dailytargum.com/article/2001/09/bus-loses-control-crashes">2001</a>, no one was seriously injured</li>
 	<li>The Busch Campus Cove used to be an arcade</li>
 	<li>Back when the drinking age used to be 18 (the good ole days), gerlanda's used to be a bar</li>
-	<li>Actually apperntly all of the student centers used to have pubs</li>
+	<li>Actually apparently all of the student centers used to have pubs</li>
 	<li>The Rutgers Tennis Courts used to have a giant bubble surrounding it, but it got damaged by hurricanes
 	and was never repaired.</li>
 	<li>The Busch Student Center used to have an Art Gallery</li>
